@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.pkg2018.GameLibraryController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: grey;" />
+      <Button layoutX="229.0" layoutY="502.0" mnemonicParsing="false" onAction="#newGameButtonPushed" prefHeight="59.0" prefWidth="142.0" text="Add" textFill="#ae3da5">
+         <font>
+            <Font name="Gill Sans MT Bold" size="33.0" />
+         </font></Button>
+      <VBox layoutX="182.0" layoutY="117.0" prefHeight="317.0" prefWidth="236.0" spacing="10.0">
+         <children>
+            <Label alignment="TOP_CENTER" prefHeight="21.0" prefWidth="337.0" text="Name">
+               <font>
+                  <Font name="Britannic Bold" size="24.0" />
+               </font></Label>
+            <TextField fx:id="gameNameTextField" />
+            <Label alignment="TOP_CENTER" prefHeight="21.0" prefWidth="319.0" text="Genre">
+               <font>
+                  <Font name="Britannic Bold" size="24.0" />
+               </font></Label>
+            <ComboBox fx:id="gameGenreComboBox" prefHeight="31.0" prefWidth="264.0" />
+            <Label alignment="TOP_CENTER" prefHeight="21.0" prefWidth="304.0" text="Rating">
+               <font>
+                  <Font name="Britannic Bold" size="24.0" />
+               </font></Label>
+            <ComboBox fx:id="gameAgeRatingComboBox" prefHeight="31.0" prefWidth="256.0" />
+            <Label alignment="TOP_CENTER" prefHeight="21.0" prefWidth="316.0" text="Star ★ Rating">
+               <font>
+                  <Font name="Britannic Bold" size="24.0" />
+               </font></Label>
+            <Spinner fx:id="gameStarRatingSpinner" prefHeight="31.0" prefWidth="249.0" />
+         </children>
+      </VBox>
+      <Label fx:id="errorMsgLabel" layoutX="83.0" layoutY="423.0" prefHeight="59.0" prefWidth="435.0" />
+      <Label alignment="TOP_CENTER" layoutX="147.0" layoutY="21.0" prefHeight="50.0" prefWidth="318.0" text="Game Library" textFill="#fbff00" underline="true">
+         <font>
+            <Font name="Franklin Gothic Medium Cond" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
